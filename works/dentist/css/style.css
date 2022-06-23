@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+body {
+  color: #333;
+
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*ヘッダー*/
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-title {
+  display: flex;
+  align-items: center;
+  background-color:rgb(157, 226, 241);
+  padding-right: 30px;
+}
+
+.site-title h1 {
+  margin-left: 20px;
+}
+#header .tel {
+  padding-left: 150px;
+}
+.tel p {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.tel-text {
+  display: flex;
+  align-items: center;
+}
+.tel-text img {
+  margin-right: 10px;
+}
+#header .gnav ul {
+  display: flex;
+  margin-top: 20px;
+}
+#header .gnav li {
+  margin-right: 20px;
+}
+/*メインビジュアル*/
+.mv img {
+  margin-bottom: 20px;
+}
+.main-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.main-text {
+  margin: 0 auto;
+}
+
+
+/*フィールド*/
+#field {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+.field {
+  width: 45%;
+  display: flex;
+  margin-bottom: 40px;
+}
+.field img {
+  margin-right: 20px;
+}
+.field h3,p {
+  margin-bottom: 10px;
+}
+.field a {
+  color:rgb(99, 150, 205);
+  border-bottom: 1px solid rgb(99, 150, 205);
+}
+
+
+/*フッター*/
+#footer {
+  background-color: rgb(157, 226, 241);
+  padding-top: 30px;
+}
+#footer p {
+  text-align: center;
+  font-size: 0.725rem;
+  padding: 10px;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  margin-bottom: 30px;
+
+}
+.footer-nav li {
+  margin-bottom: 5px;
+}
+#footer .tel p {
+  font-size: 1.25rem;
+}
+
+/*レスポンシブ*/
+@media screen and (max-width: 767px) {
+  #header {
+    flex-direction: column;
+    text-align: center;
+  }
+  #header .site-title {
+    margin-bottom: 15px;
+  }
+  #header .tel {
+    padding: 0;
+  }
+  #header .gnav ul {
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  .main-text {
+    width: 80%;
+  }
+  #field {
+    flex-direction:column;
+  }
+  .field {
+    width: 80%;
+    margin: 20px auto;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  #footer .site-title {
+    margin-bottom: 15px;
+  }
+  .footer-nav {
+    margin-bottom: 15px;
+  }
+}
